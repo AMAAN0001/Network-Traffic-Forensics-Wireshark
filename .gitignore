@@ -1,0 +1,11 @@
+
+
+# Logs & captures
+*.log
+*.pcap
+*.pcapng
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
