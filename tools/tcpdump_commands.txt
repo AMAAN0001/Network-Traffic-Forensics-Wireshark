@@ -1,0 +1,14 @@
+# General capture (all traffic)
+sudo tcpdump -i eth0 -w captures/all_traffic.pcap
+
+# Capture only ARP packets
+sudo tcpdump -i eth0 arp -w captures/arp.pcap
+
+# Capture only DNS traffic
+sudo tcpdump -i eth0 port 53 -w captures/dns.pcap
+
+# Limit to first 100 packets
+sudo tcpdump -i eth0 -c 100 -w captures/sample.pcap
+
+# Capture HTTP traffic
+sudo tcpdump -i eth0 port 80 -w captures/http.pcap
